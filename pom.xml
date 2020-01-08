@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.xwl</groupId>
-	<artifactId>task-scheduling</artifactId>
+	<artifactId>task-scheduling-demo</artifactId>
 	<version>1.0</version>
-	<name>task-scheduling</name>
+	<name>task-scheduling-demo</name>
 	<description>Schedule tasks in Spring project</description>
 
 	<properties>
