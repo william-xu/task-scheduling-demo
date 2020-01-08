@@ -7,15 +7,17 @@ import java.util.Date;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Import;
 import org.springframework.scheduling.Trigger;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.scheduling.annotation.SchedulingConfiguration;
 import org.springframework.scheduling.annotation.SchedulingConfigurer;
 import org.springframework.scheduling.support.CronSequenceGenerator;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @SpringBootApplication
-@Import(SchedulingConfiguration.class)
+@EnableScheduling
+@EnableSwagger2
 public class TaskSchedulingApplication {
 
 	public static void main(String[] args) {
