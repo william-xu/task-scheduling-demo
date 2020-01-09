@@ -57,6 +57,13 @@
 			<version>2.9.2</version>
 		</dependency>
 
+		<!-- nacos相关 -->					
+	    <dependency>
+	        <groupId>com.alibaba.boot</groupId>
+	        <artifactId>nacos-config-spring-boot-starter</artifactId>
+	        <version>0.2.2</version>
+	    </dependency>	
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
