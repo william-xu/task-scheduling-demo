@@ -19,11 +19,11 @@ SpringBoot版本: 2.1.11.RELEASE
 ## Quartz任务
 这次我们使用@EnableScheduling注解来引入Quartz以及相关依赖。
 由于我们需要保存任务相关信息，这里使用的MySQL数据库进行存储，需要进行的准备：
-1. MySQL服务以及数据库
-2. 添加相关依赖项 （ quartz,mysql,lombok,swagger2,jpa）	
+1. MySQL数据库，启动的nacos服务器端
+2. 项目pom添加相关依赖项 （ quartz,mysql,lombok,swagger2,jpa,spring cloud nacos配置依赖）
 3. 配置数据库连接
 4. Quartz数据库表文件
-	从quartz发布包中获得数据库表相关脚本文件并放到resources目录下面，记得移除文件中的注释内容，否则会导致脚本执行失败而出现找不到表的错误
+	从quartz发布包中获得数据库表相关脚本文件并放到resources目录下面，记得移除文件中的注释内容，否则可能会导致脚本执行失败而出现找不到表的错误
 5. 编写相应实现类
 	使用jpa操作数据库，建立相关model、dao和控制器以及自定义的任务类（定时执行的业务逻辑）
 
