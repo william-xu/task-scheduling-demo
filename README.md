@@ -28,7 +28,7 @@ SpringBoot版本: 2.1.11.RELEASE
 	使用jpa操作数据库，建立相关model、dao和控制器以及自定义的任务类（定时执行的业务逻辑）
 
 ## 测试
-使用swagger2生成简单的接口文档，可以通 http://localhost:18080/swagger-ui.html页面查看并测试操作定时任务
+使用swagger2生成简单的接口文档，可以通 http://localhost:18080/swagger-ui.html 页面查看并测试操作定时任务
 
 
 ## 两种方式比较
@@ -43,3 +43,5 @@ SpringBoot版本: 2.1.11.RELEASE
 在属性变更时通过反射获取任务注册对象，取消正在已安排的任务，并对以及更新定时表达式的任务进行安排
 
 不推荐使用这种方式来实现重新安排任务，但对可以加深对Spring定时任务调度安排的理解。
+
+
